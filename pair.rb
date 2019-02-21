@@ -5,8 +5,8 @@ foods = []
   foods << gets.chomp
 end
 
+i = 1
 foods.each do |food|
-  puts "I love #{food}"
-  
+  puts "#{i}. #{food}"
+  i += 1 
 end
-
