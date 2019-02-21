@@ -1,9 +1,4 @@
-class Vehicle
-   def initialize
-    @speed = 0
-    @direction = 'north'
-  end
-
+module Towable
   def brake
     @speed = 0
   end
@@ -15,48 +10,29 @@ class Vehicle
   def turn(new_direction)
     @direction = new_direction
   end
-end
+end 
 
-class Car < Vehicle
-  def honk_horn
-    puts "Beeeeeeep!"
-  end
-end
-
-class Bike < Vehicle
-  def ring_bell
-    puts "Ring ring!"
-  end
-end
-
-class Vehicle
+class Car
+  include Towable
   def initialize
     @speed = 0
     @direction = 'north'
   end
 
-  def brake
-    @speed = 0
-  end
-
-  def accelerate
-    @speed += 10
-  end
-
-  def turn(new_direction)
-    @direction = new_direction
-  end
-end
-
-class Car < Vehicle
   def honk_horn
-    puts "Beeeeeeep!"
+    puts "Bee-Beeeep!"
   end
 end
 
-class Bike < Vehicle
-  def ring_bell
-    puts "Ring ring!"
+class Motorcycle
+  include Towable
+  def initialize
+    @speed = 0
+    @direction = 'north'
+  end
+
+  def swerve_between_cars
+    puts "Look out!!!"
   end
 end
 
@@ -72,9 +48,9 @@ end
 
 
 
-bike1 = Bike.new
-p bike1
-bike1.accelerate
-p bike1
-bike1.ring_bell
-bike1.honk_horn
+motorcycle1 = Motorcycle.new
+p motorcycle1
+motorcycle1.accelerate
+p motorcycle1
+motorcycle1.swerve_between_cars
+# motorcycle1.honk_horn
