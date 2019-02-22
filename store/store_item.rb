@@ -1,11 +1,11 @@
 dog1 = {:breed => "Scottie", :color => "black", :name => "Jackson", :price => 400}
-dog2 = {:breed => "Rottie", :color => "black/tan", :name => "Spike",:price => 500}
-# dog3 = {:breed => "German Shepherd", :color => "tan/black", :price => 800}
+dog2 = {:breed => "Rottie", :color => "black/tan", :name => "Spike", :price => 500}
+dog3 = {:breed => "Shepherd", :color => "tan/black", :name => "Sarge", :price => 800}
 
 
 p "Dog1 is a #{dog1[:color]} #{dog1[:breed]} named #{dog1[:name]} that costs $#{dog1[:price]}"
-p "Dog2 is a #{dog2[:color]} #{dog2[:breed]} named #{dog1[:name]} that costs $#{dog2[:price]}"
-# p "Dog3 is a #{dog3[:color]} #{dog3[:breed]} that costs $#{dog3[:price]}"
+p "Dog2 is a #{dog2[:color]} #{dog2[:breed]} named #{dog2[:name]} that costs $#{dog2[:price]}"
+p "Dog3 is a #{dog3[:color]} #{dog3[:breed]} named #{dog3[:name]} that costs $#{dog3[:price]}"
 
 class Dog
   attr_reader :breed, :color, :price
@@ -20,6 +20,7 @@ class Dog
 
   dog1 = Dog.new(breed: "Scottie", color: "black", name: "Jackson", price: 400 )
   dog2 = Dog.new(breed: "Rottie", color: "black/tan", name: "Spike", price: 500 )
+  dog3 = Dog.new(breed: "Shepherd", color: "tan/black", name: "Sarge", price: 800 )
 
   # def print_info
   #   p "Dog1 is a #{dog1[:color]} #{dog1[:breed]} named #{dog1[:name]} that costs $#{dog1[:price]}"
