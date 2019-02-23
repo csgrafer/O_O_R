@@ -39,11 +39,11 @@ end
 
 # driver code
 
-# car1 = Car.new
-# p car1
-# car1.accelerate
-# p car1
-# car1.honk_horn
+car1 = Car.new
+p car1
+car1.accelerate
+p car1
+car1.honk_horn
 # car1.ring_bell
 
 
