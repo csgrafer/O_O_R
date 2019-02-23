@@ -58,7 +58,9 @@ class Employee
   end
 end
 
-employee1 = Employee.new(:first_name => "David", :last_name => "Koresh", :salary => 500000, :active => false)
+# employee1 = Employee.new( :last_name => "Koresh", :salary => 500000, :active => false, :first_name => "David")
+employee1 = Employee.new(last_name: "Koresh", salary: 500000, active: false, first_name: "David")
+
 p employee1.first_name
 employee1.first_name = "Tim"
 p employee1.first_name
