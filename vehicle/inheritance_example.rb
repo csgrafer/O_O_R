@@ -32,7 +32,7 @@ class Motorcycle
   end
 
   def swerve_between_cars
-    puts "Look out!!!"
+    puts "Look out!!"
   end
 end
 
